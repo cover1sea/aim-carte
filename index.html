@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIM CARTE | エイムカルテ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="gl"></canvas>
+  <canvas id="overlay"></canvas>
+  <div id="crosshair" hidden></div>
+
+  <div id="hud" hidden>
+    <div class="hud-item"><span class="hud-label">TIME</span><span id="hudTime">60.0</span></div>
+    <div class="hud-item"><span class="hud-label" id="hudKLabel">KILLS</span><span id="hudKills">0</span></div>
+    <div class="hud-item"><span class="hud-label" id="hudALabel">ACC</span><span id="hudAcc">100%</span></div>
+    <div class="hud-name" id="hudName"></div>
+  </div>
+  <div id="gameMsg" hidden></div>
+  <div id="fps" hidden></div>
+  <div id="moveHud" hidden><div class="mbar"><i></i><b></b></div><span></span></div>
+  <canvas id="miniMap" width="120" height="120" hidden></canvas>
+
+  <div id="replayBar" hidden>
+    <button id="rpPlay" class="btn small">▶</button>
+    <input id="rpSeek" type="range" min="0" max="1000" value="0" />
+    <span id="rpTime" class="mono">0.0 / 0.0</span>
+    <select id="rpSpeed">
+      <option value="0.25">0.25x</option><option value="0.5">0.5x</option>
+      <option value="1" selected>1x</option><option value="2">2x</option>
+    </select>
+    <label class="chk"><input id="rpTrail" type="checkbox" checked /> 軌跡</label>
+    <span id="rpName" class="rp-name"></span>
+    <button id="rpClose" class="btn small ghost">閉じる</button>
+  </div>
+
+  <div id="app">
+    <header class="topbar">
+      <div class="logo">AIM<span>CARTE</span></div>
+      <nav id="nav">
+        <a data-view="home" class="active">練習</a>
+        <a data-view="training">トレーニング</a>
+        <a data-view="benchmark">総合ベンチマーク</a>
+        <a data-view="history">履歴</a>
+        <a data-view="settings">感度・設定</a>
+        <a data-view="theory">理論</a>
+      </nav>
+      <span class="fs-wrap">
+        <button id="fsChip" class="fs-chip" data-fs="1" title="全画面にする (ESC でも解除されない F11 がおすすめ)" hidden></button>
+        <span id="fsTip" class="fs-tip" hidden></span>
+      </span>
+      <div id="sensBadge" class="sens-badge"></div>
+    </header>
+    <main id="view"></main>
+  </div>
+  <div id="modal" hidden></div>
+  <div id="toast"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
