@@ -37,3 +37,11 @@ http://localhost:5173 を Chrome / Edge で開く。プレイ中はマウスが�
 - `src/feedback.js` 診断・参考文献・シナリオ生成
 - `src/main.js` 画面
 - `public/sfx/` 効果音 (ComfyUI / Stable Audio 3 で生成)
+
+## ライセンス
+
+MIT License ([LICENSE](LICENSE))。
+
+- 依存ライブラリ (three.js, Chart.js, Vite ほか) は MIT / ISC / BSD-3-Clause。
+- `public/sfx/` の効果音は Stable Audio 3 Medium (Stability AI Community License) で生成したもの。
+- フォント (Rajdhani, Noto Sans JP) は Google Fonts から読み込んでいて、リポジトリには含まない (SIL Open Font License)。
