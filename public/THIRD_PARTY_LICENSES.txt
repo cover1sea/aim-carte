@@ -1,10 +1,9 @@
-﻿AIM CARTE で使用しているオープンソースソフトウェアのライセンス
-Third-party software licenses used in AIM CARTE
+﻿Third-party software licenses for AIM CARTE
 
-このアプリの配布物 (ビルド済みの JavaScript) には、以下のソフトウェアが含まれています。
+This application includes the following third-party software.
 
 ========================================================================
-three.js 0.169.0 (MIT) - 3D 描画
+three.js 0.169.0 (MIT)
 https://threejs.org/
 ========================================================================
 
@@ -31,7 +30,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ========================================================================
-Chart.js 4.4.4 (MIT) - グラフ
+Chart.js 4.4.4 (MIT)
 https://www.chartjs.org
 ========================================================================
 
@@ -46,7 +45,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ========================================================================
-@kurkle/color 0.3.4 (MIT) - Chart.js が内部で使用
+@kurkle/color 0.3.4 (MIT)
 https://github.com/kurkle/color#readme
 ========================================================================
 
@@ -61,7 +60,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ========================================================================
-Vite 5.4.10 (MIT) - ビルド結果に含まれるモジュール先読みの小さなコード
+Vite 5.4.10 (MIT)
 https://vite.dev
 ========================================================================
 
