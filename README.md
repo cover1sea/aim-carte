@@ -69,3 +69,5 @@ npm run build   # dist/ に出力
 ## ライセンス
 
 MIT License（[LICENSE](LICENSE)）
+
+使用しているオープンソースソフトウェアのライセンスは [THIRD_PARTY_LICENSES.txt](public/THIRD_PARTY_LICENSES.txt) にまとめています（アプリの「感度・設定」画面の末尾からも見られます）。

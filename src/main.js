@@ -1097,7 +1097,11 @@ function viewSettings() {
         <div class="field"><label>音量 ${Math.round(s.volume * 100)}%</label><input id="vol" type="range" min="0" max="1" step="0.05" value="${s.volume}" /></div>
         <div class="field"><label>標準プレイ時間</label><select id="dur">${[30, 45, 60, 90, 120].map((d) => `<option ${d === s.duration ? 'selected' : ''} value="${d}">${d} 秒</option>`).join('')}</select></div>
       </div>
-    </div>`;
+    </div>
+    <p class="license-links dim small">
+      ライセンス: <a href="https://github.com/cover1sea/aim-carte/blob/main/LICENSE" target="_blank" rel="noopener">AIM CARTE (MIT License)</a>
+      ・ <a href="./THIRD_PARTY_LICENSES.txt" target="_blank" rel="noopener">使用しているオープンソースソフトウェア</a>
+    </p>`;
   const save = () => { saveSettings(settings); updateSensBadge(); renderDerived(); };
   $$('.game-pick button').forEach((b) => (b.onclick = () => { settings.game = b.dataset.g; save(); viewSettings(); }));
   const num = (id, fn) => { const el = $('#' + id); if (el) el.oninput = () => { const v = parseFloat(el.value); if (v > 0) { fn(v); save(); } }; };

@@ -344,3 +344,7 @@ kbd {
   color: #6b5a20; font-size: 15px; cursor: pointer;
 }
 .fs-tip-x:hover { background: #0000000f; color: #2a2000; }
+
+/* 設定画面の末尾のライセンス */
+.license-links { margin-top: 28px; text-align: center; }
+.license-links a { color: var(--accent2); }
