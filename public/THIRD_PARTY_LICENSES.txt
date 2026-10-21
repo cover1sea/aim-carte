@@ -1,4 +1,4 @@
-AIM CARTE で使用しているオープンソースソフトウェアのライセンス
+﻿AIM CARTE で使用しているオープンソースソフトウェアのライセンス
 Third-party software licenses used in AIM CARTE
 
 このアプリの配布物 (ビルド済みの JavaScript) には、以下のソフトウェアが含まれています。
